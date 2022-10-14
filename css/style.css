@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Main styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: #090a0d;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header styles */
+header {
+  height: 100vh;
+}
+
+header video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/* Navigation styles */
+
+header section {
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, .3);  
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  
+}
+
+.main-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.main-nav .logo,
+.main-nav nav,
+.main-nav nav ul li,
+.main-nav .login-btn {
+  display: inline-block;
+}
+
+.main-nav .logo {
+  /* margin-left: 10px; */
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.main-nav nav {
+  text-transform: uppercase;
+  margin-left: 70px;
+  
+}
+
+.main-nav nav ul li {
+  margin-left: 20px;
+}
+
+.main-nav nav ul li a {
+  transition: all ease-in-out .2s;
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+
+.main-nav nav ul li a:hover{
+  color: #ff0040;
+  transition: all ease-in-out .2s;
+}
+
+.active {
+  border-bottom: #ff0040 2px solid;
+}
+
+.active:hover {
+  border-bottom: #fff 2px solid;;
+}
+
+.main-nav .login-btn {
+  margin-left: 700px;
+  background-color: #ff0040;
+  width: 100px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+  transition: all ease-in-out .3s;
+}
+
+.main-nav .login-btn:hover {
+  background-color: #000;
+  border: 1px solid white;
+  transition: all ease-in-out .2s;
+}
+
+/* Section styles */
+#series,
+#movies {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 20px;
+  position: relative;
+}
+
+#series {
+  border-bottom: 2px solid #181b22;
+  padding-bottom: 100px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+.see-more {
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.see-more a {
+  color: #ff0040;
+  transition: all ease-in-out .2s;
+}
+
+.see-more a:hover {
+  color: #666;
+  transition: all ease-in-out .2s;
+}
+
+article {
+  width: 22%;
+  display: inline-block;
+  margin-right: 33px;
+}
+
+.article-image {
+  width: 100%;
+  max-height: 370px;
+  border-radius: 5px;
+  margin-top: 50px;
+  transition: all ease-in-out .2s;
+}
+
+.article-image:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out .2s;
+}
+
+.article-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.article-title a {
+  transition: all ease-in-out .2s;
+}
+
+.article-title a:hover {
+  color: #666;
+  transition: all ease-in-out .2s;
+}
+
+.article-length {
+  display: inline-block;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: .7rem;
+  color: #666;
+  font-weight: bolder;
+}
+
+.article-genre {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .7rem;
+  color: #666;
+  font-weight: bolder;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #000;
+  height: 100px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+
+footer p {
+  line-height: 100px;
+}
+
+/* Anime page style */
+#anime-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+#anime-page .anime-title {
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+#anime-page img {
+  width: 45%;
+  margin-top: 50px;
+  margin-right: 50px;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+#anime-page #anime-details {
+  width: 45%;
+  display: inline-block;
+}
+
+#anime-page #anime-details .anime-heading {
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+}
+
+#anime-page #anime-details .anime-content li .anime-info,
+#anime-page #anime-details .anime-content li .anime-info-2 {
+  display: inline-block;
+  font-size: .9rem;
+  text-transform: uppercase;
+  color: #666;
+}
+
+#anime-page #anime-details .anime-content {
+  margin-bottom: 30px;
+}
+
+#anime-page #anime-details .anime-content li {
+  border-bottom: 1px #666 solid;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+#anime-page #anime-details .anime-content li .anime-info-2 {
+  position: absolute;
+  right: 0;
+}
+
+#anime-page #anime-details .anime-summary {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
